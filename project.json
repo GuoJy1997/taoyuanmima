@@ -1,0 +1,225 @@
+{
+  "id": "桃园密码-270405",
+  "title": "桃园密码",
+  "currentChapter": 36,
+  "chapters": [
+    {
+      "num": 1,
+      "title": "忘路之远近",
+      "status": "draft",
+      "file": "正文/001-第1章-忘路之远近.md"
+    },
+    {
+      "num": 2,
+      "title": "豁然开朗",
+      "status": "draft",
+      "file": "正文/002-第2章-豁然开朗.md"
+    },
+    {
+      "num": 3,
+      "title": "怡然自乐",
+      "status": "draft",
+      "file": "正文/003-第3章-怡然自乐.md"
+    },
+    {
+      "num": 4,
+      "title": "仿佛若有光",
+      "status": "draft",
+      "file": "正文/004-第4章-仿佛若有光.md"
+    },
+    {
+      "num": 5,
+      "title": "出口",
+      "status": "draft",
+      "file": "正文/005-第5章-出口.md"
+    },
+    {
+      "num": 6,
+      "title": "铁锈味",
+      "status": "draft",
+      "file": "正文/006-第6章-铁锈味.md"
+    },
+    {
+      "num": 7,
+      "title": "幻觉？",
+      "status": "draft",
+      "file": "正文/007-第7章-幻觉？.md"
+    },
+    {
+      "num": 8,
+      "title": "自告奋勇",
+      "status": "draft",
+      "file": "正文/008-第8章-自告奋勇.md"
+    },
+    {
+      "num": 9,
+      "title": "逃亡",
+      "status": "draft",
+      "file": "正文/009-第9章-逃亡.md"
+    },
+    {
+      "num": 10,
+      "title": "最后一天",
+      "status": "draft",
+      "file": "正文/010-第10章-最后一天.md"
+    },
+    {
+      "num": 11,
+      "title": "逃之夭夭",
+      "status": "draft",
+      "file": "正文/011-第11章-逃之夭夭.md"
+    },
+    {
+      "num": 12,
+      "title": "已经够了",
+      "status": "draft",
+      "file": "正文/012-第12章-已经够了.md"
+    },
+    {
+      "num": 13,
+      "title": "后遂无问津者",
+      "status": "draft",
+      "file": "正文/013-第13章-后遂无问津者.md"
+    },
+    {
+      "num": 14,
+      "title": "间隙章上-同梦",
+      "status": "draft",
+      "file": "正文/014-间隙章上-同梦.md"
+    },
+    {
+      "num": 15,
+      "title": "间隙章中-观测",
+      "status": "draft",
+      "file": "正文/015-间隙章中-观测.md"
+    },
+    {
+      "num": 16,
+      "title": "间隙章下-武陵",
+      "status": "published",
+      "file": "正文/016-间隙章下-武陵.md"
+    },
+    {
+      "num": 17,
+      "title": "梦醒时分",
+      "status": "draft",
+      "file": "正文/017-第17章-梦醒时分.md"
+    },
+    {
+      "num": 18,
+      "title": "伙伴？",
+      "status": "draft",
+      "file": "正文/018-第18章-伙伴？.md"
+    },
+    {
+      "num": 19,
+      "title": "又来？",
+      "status": "draft",
+      "file": "正文/019-第19章-又来？.md"
+    },
+    {
+      "num": 20,
+      "title": "惨死",
+      "status": "draft",
+      "file": "正文/020-第20章-惨死.md"
+    },
+    {
+      "num": 21,
+      "title": "大会",
+      "status": "draft",
+      "file": "正文/021-第21章-大会.md"
+    },
+    {
+      "num": 22,
+      "title": "陆续入场",
+      "status": "draft",
+      "file": "正文/022-第22章-陆续入场.md"
+    },
+    {
+      "num": 23,
+      "title": "重逢",
+      "status": "draft",
+      "file": "正文/023-第23章-重逢.md"
+    },
+    {
+      "num": 24,
+      "title": "修禊事也",
+      "status": "draft",
+      "file": "正文/024-第24章-修禊事也.md"
+    },
+    {
+      "num": 25,
+      "title": "禊饮",
+      "status": "draft",
+      "file": "正文/025-第25章-禊饮.md"
+    },
+    {
+      "num": 26,
+      "title": "失踪",
+      "status": "draft",
+      "file": "正文/026-第26章-失踪.md"
+    },
+    {
+      "num": 27,
+      "title": "魏晋风度",
+      "status": "draft",
+      "file": "正文/027-第27章-魏晋风度.md"
+    },
+    {
+      "num": 28,
+      "title": "荆州客",
+      "status": "draft",
+      "file": "正文/028-第28章-荆州客.md"
+    },
+    {
+      "num": 29,
+      "title": "午前",
+      "status": "draft",
+      "file": "正文/029-第29章-午前.md"
+    },
+    {
+      "num": 30,
+      "title": "风暴眼",
+      "status": "draft",
+      "file": "正文/030-第30章-风暴眼.md"
+    },
+    {
+      "num": 31,
+      "title": "流觞曲水",
+      "status": "draft",
+      "file": "正文/031-第31章-流觞曲水.md"
+    },
+    {
+      "num": 32,
+      "title": "群贤毕至",
+      "status": "draft",
+      "file": "正文/032-第32章-群贤毕至.md"
+    },
+    {
+      "num": 33,
+      "title": "新客",
+      "status": "draft",
+      "file": "正文/033-第33章-新客.md"
+    },
+    {
+      "num": 34,
+      "title": "大灾变",
+      "status": "draft",
+      "file": "正文/034-第34章-大灾变.md"
+    },
+    {
+      "num": 35,
+      "title": "假的",
+      "status": "draft",
+      "file": "正文/035-第35章-假的.md"
+    },
+    {
+      "num": 36,
+      "title": "血流成河",
+      "status": "draft",
+      "file": "正文/036-第36章-血流成河.md"
+    }
+  ],
+  "chaptersDir": "正文",
+  "cover": "cover.svg"
+}

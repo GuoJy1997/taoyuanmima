@@ -1,0 +1,18 @@
+{
+  "project": "桃园密码",
+  "chapters_analyzed": 1,
+  "total_book_words": 2335,
+  "chapters": [
+    {
+      "file": "043-第43章-显形.md",
+      "total_words": 2335,
+      "paragraphs": 104,
+      "dialogue_words": 594,
+      "dialogue_ratio_percent": 25.4,
+      "character_mentions": {
+        "姓名": 1
+      },
+      "clues_detected": []
+    }
+  ]
+}

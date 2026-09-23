@@ -1,0 +1,131 @@
+{
+  "name": "daily",
+  "model": "hermes-agent",
+  "nodes": [
+    {
+      "id": "scan",
+      "type": "explore",
+      "title": "盘点",
+      "goal": "盘点全书进度与伏笔",
+      "skills": [],
+      "config": {
+        "sourcePaths": [
+          "outline.md",
+          "world.md"
+        ]
+      },
+      "x": 24,
+      "y": 24
+    },
+    {
+      "id": "dna",
+      "type": "gene",
+      "title": "拆书",
+      "goal": "提取骨架与文笔基因",
+      "skills": [],
+      "config": {
+        "sourcePaths": [
+          "outline.md"
+        ],
+        "targetPath": "genes/source-book.md"
+      },
+      "x": 240,
+      "y": 24
+    },
+    {
+      "id": "draft",
+      "type": "write",
+      "title": "写第一章",
+      "goal": "写第 1 章",
+      "skills": [
+        "opening-hook"
+      ],
+      "config": {
+        "targetPath": "chapters/ch_01.md"
+      },
+      "x": 456,
+      "y": 24
+    },
+    {
+      "id": "wash",
+      "type": "deai",
+      "title": "去 AI 味",
+      "goal": "消除 AI 痕迹",
+      "skills": [],
+      "config": {
+        "targetPath": "chapters/ch_01.md"
+      },
+      "x": 672,
+      "y": 24
+    },
+    {
+      "id": "judge",
+      "type": "review",
+      "title": "审查",
+      "goal": "审 OOC、逻辑、文笔",
+      "skills": [],
+      "x": 24,
+      "y": 146
+    },
+    {
+      "id": "door",
+      "type": "gate",
+      "title": "门禁",
+      "goal": "低于 80 分打回",
+      "skills": [],
+      "config": {
+        "threshold": 80
+      },
+      "x": 240,
+      "y": 146
+    },
+    {
+      "id": "check",
+      "type": "manual",
+      "title": "作者检查",
+      "goal": "作者过目后放行",
+      "skills": [],
+      "x": 456,
+      "y": 146
+    }
+  ],
+  "edges": [
+    {
+      "from": "scan",
+      "to": "draft",
+      "attachmentType": "fact"
+    },
+    {
+      "from": "dna",
+      "to": "draft",
+      "attachmentType": "gene"
+    },
+    {
+      "from": "draft",
+      "to": "wash",
+      "attachmentType": "candidate_ref"
+    },
+    {
+      "from": "wash",
+      "to": "judge",
+      "attachmentType": "candidate_ref"
+    },
+    {
+      "from": "judge",
+      "to": "door",
+      "attachmentType": "report"
+    },
+    {
+      "from": "door",
+      "to": "draft",
+      "attachmentType": "pass",
+      "loop": true,
+      "maxRetries": 2
+    },
+    {
+      "from": "door",
+      "to": "check",
+      "attachmentType": "pass"
+    }
+  ]
+}

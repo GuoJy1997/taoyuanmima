@@ -1,0 +1,307 @@
+version: 1
+name: novel-taoyuan-code
+params:
+  chapter_num: 51
+  chapter_pad: '51'
+  chapter_pad3: '051'
+  chapter_title: 回响
+  volume_name: 现实间隙卷_兰亭余波
+  genre: 历史悬疑 × 规则怪谈 × 魏晋智斗
+  tone: 考据冷硬、短句破进、高密度对白、现实余震
+  style_archetype: 十日终焉×诡舍 (现代通俗白话/生死博弈/深度心理悬疑)
+  classical_ratio: 纯现代通俗白话占比 90%~95%，半文半白仅占 5%~10%
+  psychological_depth: 高密度心理推演与生理应激白描（心率、冷汗、微表情、多步推演反制），严禁削弱情绪
+  target_words: 2300
+nodes:
+  explore_context:
+    kind: agent
+    model: gemini-3.8-flash-high
+    role: 副本前情探索与状态对齐总账员
+    prompt: |
+      你正在为长篇历史悬疑《桃园密码》第 51 章（间隙章·一：回响）做前情探索与前置状态对齐。
+      请深入比对以下输入文件：
+      1. 前一章正文结尾（正文/050-第50章-归朝堂.md）：顾君裁决“归朝堂”定局，谢安促成桓温与朝堂的妥协，王羲之托付《兰亭集序》真迹，尸魔化作金红光屑消散，生门洞开，白光吞没兰亭，全员撤出回归现实；
+      2. 《间隙章大纲.md》第 51 章细纲【间隙章·一 回响】：
+         - 时段：现实世界第一天 09:15 ~ 17:30；场景：顾君出租屋 → 司隶校尉论坛加密层 → 张洋家 → 顾君出租屋门前；登场人物：顾君、张洋、白艺（秦华在论坛私信出场）；
+         - 生理创伤与现实重连：顾君被肺部窒息感呛醒，手腕严重挫伤泛青紫，掌心紧握【古墨残片】（刻有“会于会稽山阴之兰亭”金字），确认会稽血战非梦，且现实只过去七个半小时；
+         - 论坛加密初连：因兰亭未交换手机号，顾君通过司隶校尉论坛加密私信连线秦华（ID【关山难越】）；秦华确认全员脱困，通报老莫与苏晚晴正在静养，语气沉稳如山，展现靠谱老大哥形象；
+         - 探望创伤张洋：顾君前往张洋住处；张洋呈现重度创伤后应激障碍（PTSD），双手神经性痉挛颤抖，对会稽名士分尸碎肉心有余悸；顾君以发小默契与冷幽默宽慰，确立张洋在现实后方休养并监控论坛，不再参与下一轮前线冒险；
+         - 雪梨热汤：顾君傍晚返回，对门白艺身穿素净针织衫，端着降燥的雪梨银耳汤开门相迎；
+      3. 《handoff.md》第二副本总结：幸存六人（顾君、张洋、老莫、白艺、苏晚晴、秦华）当前状态；带出核心国宝《兰亭集序》真迹与第三副本入场凭证【古墨残片】（感应西北方向金石杀气）；
+      4. 【核心交付物一：知情视界三栏表 (Epistemic Horizon Sandbox)】：
+         - 详列出场角色（顾君、张洋、白艺，论坛私信中的秦华）在第51章的三态：1. 已确证已知 2. 合理假说/推演 3. 绝对禁区盲区；
+         - 现实世界章节：严禁任何角色上帝视角前知第三副本（张掖/雷台汉墓/居延汉简）剧情；老莫的守玺宗族深水情报与雷台内参尚未向顾君摊牌（第52~53章才揭开）；
+         - 秦华是卢夏暗桩：该真相属于绝对禁区——所有角色（含顾君）当前都不能识破，其论坛私信只能是“沉稳如山靠谱老大哥”的伪装面；
+         - 严查直觉假说未经验证直接变成既定事实；
+      5. 【核心交付物二：角色称谓与社交礼仪白名单 (Addressing & Etiquette Matrix)】：
+         - 发小称谓铁律：张洋称呼顾君只能叫“老顾/顾子/君儿”，绝对禁止直呼全名“顾君”！
+         - 秦华论坛私信对顾君的称呼须符合战友口吻（如“顾队/老顾”），严禁文绉绉疏离腔；
+         - 情绪打断动力学：张洋是PTSD伤员，顾君、白艺对他的宽慰必须温和克制，严禁粗暴狂暴咆哮“闭嘴/给我闭嘴/别废话”，采用发小冷幽默、接梗反诘或肢体安抚；
+      6. 《人物小传.md》知情边界铁律：
+         - 顾君受限第三人称视角，带着兰亭余悸与程序员排障本能回归日常；
+         - 白艺理性量化派，本章释放克制的邻里温情；
+         - 严禁出现禁忌词“一死生”、“齐彭殇”、“虚诞”、“妄作”。
+      输出精炼严密的任务上下文到指定文件：工作区/第{chapter_pad}章/01_前情与状态上下文.md。
+    inputs:
+      - 间隙章大纲.md
+      - handoff.md
+      - 人物小传.md
+      - 设定/事实账本/snapshot.json
+      - 正文/050-第50章-归朝堂.md
+    outputs:
+      - 工作区/第{chapter_pad}章/01_前情与状态上下文.md
+    skills:
+      - novel-memory-ledger
+      - novel-context-curator
+      - novel-clue-foreshadowing
+      - novel-character-guardian
+    assert:
+      min_words: 300
+    subagent_type: novel_context_scout
+    model_tier: flash
+  scene_beats:
+    kind: agent
+    after:
+      - explore_context
+    role: 单章分场骨架与悬念架构师
+    model_tier: flash
+    prompt: |
+      依据 工作区/第{chapter_pad}章/01_前情与状态上下文.md 与《间隙章大纲.md》第 {chapter_num} 章细纲，
+      构建本章的分场微观节拍与戏剧张力架构：
+      1. 规划本章黄金开局切入点（In Medias Res，危机直接切入，杜绝交代背景）；
+      2. 规划 3~4 个核心分场节拍（每个节拍严格闭环：即时目标 Goal、阻碍交锋 Conflict、恶化转折 Disaster，并标明动静幕与五感物理锚点）；
+      3. 规划动静呼吸节奏交替波浪线，严控水分，预排对白与白描配比（对白占比 25%~40%）；
+      4. 严格设计章末断章悬念钩子（从六大断章模型中选择其一并设计落幅句）。
+      输出紧凑的分场节拍表到指定路径。
+    inputs:
+      - 工作区/第{chapter_pad}章/01_前情与状态上下文.md
+      - 间隙章大纲.md
+    outputs:
+      - 工作区/第{chapter_pad}章/01_5_分场节拍表.md
+    skills:
+      - novel-scene-tension
+      - novel-scene-pacing
+    assert:
+      min_words: 300
+  draft_chapter:
+    kind: agent
+    after:
+      - scene_beats
+    model: gemini-3.8-flash-high
+    role: 历史悬疑小说主笔作家 (对标鬼吹灯/世说新语/魏晋暗战)
+    prompt: |
+      你正在为《桃园密码》撰写正文第 {chapter_num} 章（间隙章·一《{chapter_title}》）。
+      请严格依据 工作区/第{chapter_pad}章/01_5_分场节拍表.md 的分场架构、工作区/第{chapter_pad}章/01_前情与状态上下文.md 的任务卡与《间隙章大纲.md》第 51 章细纲推进剧情：
+      1. 篇幅字数：必须严格落在 2000 ~ 2500 字之间；
+      2. 对话密度红线：必须包含多轮紧凑深度对白，保持对白呼吸感与留白，严禁连续 450 字以上无互动的枯燥说明文，但绝不可机械式频繁插入无营养碎嘴对白！全章对白占比控制在 25%~40%，留足篇幅给顾君的生理应激白描、创伤心理推演与主要人物的神态动作白描；
+      3. 称谓与社交礼仪红线（一票否决门禁）：
+         - 张洋称呼顾君只能称“老顾/顾子/君儿”，绝对禁止直呼全名“顾君”！
+         - 秦华论坛私信对顾君必须用战友口吻称呼，严禁文绉绉疏离腔！
+         - 顾君、白艺对待PTSD状态的张洋严禁狂暴怒喝“闭嘴/给我闭嘴/别废话”，互动必须体现发小默契、冷幽默接梗或温和肢体安抚；
+      4. 知情视界与防剧透红线：严守上下文中的【知情视界三栏表】，摄像机焊死在顾君视网膜上（受限第三人称）；现实世界章节严禁偷渡第三副本（张掖/雷台/居延）任何未发生剧情，严禁上帝视角；
+      5. 严守人设边界：顾君是带伤回归的程序员（窒息感后遗症、手腕挫伤、指尖神经性痉挛，用排障思维给自己做心理脱敏）；张洋是重度PTSD伤员但发小底色不失（贫嘴回暖要有过程感）；白艺是理性量化派释放克制温情（素净针织衫、雪梨银耳汤）；秦华只在论坛私信出场，文字沉稳如山、句句靠谱（伪装面，绝不暴露暗桩身份，严禁长篇历史考据）；
+      6. 严格禁忌词：绝不能出现禁忌词“一死生”、“齐彭殇”、“虚诞”、“妄作”！
+      7. 核心剧情推进（四幕小节）：
+         - 窒息呛醒：顾君从床上弹坐而起，肺叶像被灌了湿烂竹叶碎屑般火辣抽搐，指尖不受控地神经性痉挛；确认掌心【古墨残片】淡金篆纹“会于会稽山阴之兰亭”，会稽血战非梦，现实只过去七个半小时；出租屋风扇吱呀、干燥霉味，与兰亭血战的凄厉尸吼形成惨烈感官对冲；
+         - 论坛初连：登录司隶校尉论坛加密层，私信连线秦华（ID【关山难越】）；秦华确认全员脱困、老莫与苏晚晴正在静养，语气沉稳如山；
+         - 探望张洋：张洋双手神经性痉挛颤抖，对会稽名士分尸碎肉心有余悸；顾君以发小默契与冷幽默宽慰，确立张洋留守现实后方休养、监控论坛舆情、不再参与下一轮前线冒险；
+         - 雪梨热汤：傍晚返回出租屋，对门白艺身穿素净针织衫，端着降燥的雪梨银耳汤开门相迎，邻里温情收束全章；
+      8. 本章伏笔落点：古墨残片散发淡淡松烟墨香、能微弱缓解神经性头痛；张洋正式转入后方；顾君与白艺的邻里温情线埋下。
+    inputs:
+      - 工作区/第{chapter_pad}章/01_5_分场节拍表.md
+      - 工作区/第{chapter_pad}章/01_前情与状态上下文.md
+      - 人物小传.md
+      - 间隙章大纲.md
+      - assets/voice_sample.md
+    outputs:
+      - 工作区/第{chapter_pad}章/02_正文初稿.md
+    assert:
+      min_words: 2000
+      max_words: 2500
+      addressing_check: true
+      epistemic_check: true
+      forbidden_terms:
+        - 闭嘴
+        - 给我闭嘴
+    subagent_type: novel_chapter_writer
+    model_tier: flash
+  deai_polish:
+    kind: agent
+    after:
+      - draft_chapter
+    model: gemini-3.8-flash-high
+    role: 去 AI 味与魏晋民俗文风专家
+    prompt: |
+      对照 assets/voice_sample.md 中的原著语言指纹，对 工作区/第{chapter_pad}章/02_正文初稿.md 进行深度去 AI 味润色：
+      1. 坚决粉碎“宛如”、“仿佛在诉说着”、“在这一刻”、“不仅如此”、“更重要的是”、“殊不知”、“嘴角勾起一抹弧度”、“倒吸一口凉气”等 AI 套路词；
+      2. 强化物理白描与微反应：风扇吱呀转动里干燥霉味的颗粒感、水泥地面透过袜底的凉意、古墨残片淡金篆纹蹭过指腹的干涩触感、手腕挫伤青紫在晨光下的淤色层次、论坛屏幕冷光打在瞳孔上的刺痒、张洋指尖痉挛时茶杯震出的细密水纹、雪梨银耳汤白瓷碗口腾起的热气；
+      3. 强力执行短句破进，把 30 字以上的复合长从句拆解为 4~8 字短单句连续推进动词；
+      4. 保证对白呼吸感：全篇对白占比控制在 25%~40%，杜绝碎嘴乒乓对白，放宽连续描写上限至 400 字，留足空间给主要角色（顾君、张洋、白艺）的动作、神情与生理应激白描；
+      5. 人设把关：排查并修正秦华（论坛私信）越界讲历史考据、白艺矫揉造作煽情、张洋PTSD表现悬浮失真的 OOC 问题；
+      6. 称谓与社交礼仪把关：严查张洋与秦华对白，清除直呼全名“顾君”，修正为“老顾/顾子/君儿”或战友口吻称呼；清除对张洋的粗暴吼叫“闭嘴/给我闭嘴”，修正为冷幽默接梗或温和安抚；
+      7. 严格落实【朱雀对抗三层规范】：执行断崖式句长交替（CV ≥ 0.45，长白描句紧接 2~5 字短句），严防连续 3 句匀速；状态副词严控 ≤ 2.0/百字（消灭“缓缓/微微/悄然”）；绝对格杀“不是A而是B”“不仅是A更是B”二元否定与三段式机械排比；
+      8. 若 工作区/第{chapter_pad}章/03_3_朱雀检测报告.md 已存在且未过门禁，严格依照报告中的【靶向重写错题集】逐条定向粉碎扣分病灶。
+    skills:
+      - story-deslop
+      - novel-deai-humanizer
+      - novel-sensory-grounding
+      - novel-anti-cliche
+    inputs:
+      - 工作区/第{chapter_pad}章/02_正文初稿.md
+      - assets/voice_sample.md
+    outputs:
+      - 工作区/第{chapter_pad}章/03_去AI味润色稿.md
+    assert:
+      min_words: 1900
+      addressing_check: true
+      epistemic_check: true
+      forbidden_terms:
+        - 闭嘴
+        - 给我闭嘴
+    subagent_type: novel_deai_polisher
+    model_tier: flash
+  check_zhuque:
+    kind: command
+    after:
+      - deai_polish
+    role: 朱雀 AI 检测与拟人化特征门禁
+    run:
+      - python
+      - d:/novelFlow/shared/check_humanness.py
+      - --input
+      - 工作区/第{chapter_pad}章/03_去AI味润色稿.md
+      - --output
+      - 工作区/第{chapter_pad}章/03_3_朱雀检测报告.md
+      - --min-score
+      - '80'
+    inputs:
+      - 工作区/第{chapter_pad}章/03_去AI味润色稿.md
+    outputs:
+      - 工作区/第{chapter_pad}章/03_3_朱雀检测报告.md
+    assert:
+      min_score: 80
+      score_field: overall
+  zhuque_api_final:
+    kind: command
+    after:
+      - check_zhuque
+    role: 朱雀官方 API 终审门禁 (腾讯云 EdgeOne zhuque-text)
+    run:
+      - python
+      - d:/novelFlow/shared/check_zhuque_api.py
+      - --input
+      - 工作区/第{chapter_pad}章/03_去AI味润色稿.md
+      - --output
+      - 工作区/第{chapter_pad}章/03_4_朱雀API终审报告.md
+      - --min-score
+      - '60'
+    inputs:
+      - 工作区/第{chapter_pad}章/03_去AI味润色稿.md
+    outputs:
+      - 工作区/第{chapter_pad}章/03_4_朱雀API终审报告.md
+    assert:
+      min_score: 60
+      score_field: overall
+  audit_persona:
+    kind: agent
+    after:
+      - zhuque_api_final
+    model: gemini-3.8-flash-high
+    role: 角色人设与行为边界稽查官
+    prompt: |
+      对 工作区/第{chapter_pad}章/03_去AI味润色稿.md 进行专项人设、称谓礼仪与知情边界稽查（防 OOC 门禁）：
+      1. 【张洋（PTSD伤员）审查】：重度创伤后应激障碍的白描是否真实（神经性痉挛、心有余悸、惊跳反应）？是否有从惊惧到被发小宽慰回暖的过程感？严禁“秒速痊愈”式悬浮或纯搞笑工具人化；
+      2. 【秦华行为与知情边界审查】：本章仅论坛私信出场——是否严格维持“沉稳如山靠谱老大哥”伪装面？严禁发表任何古代汉晋历史考据、严禁流露暗桩身份、严禁对第三副本剧情有任何未卜先知；
+      3. 【发小称谓礼仪硬核审查】：张洋是否称顾君为“老顾/顾子/君儿”？严查直呼“顾君”；秦华私信称呼是否战友口吻？严查顾君/白艺对张洋粗暴咆哮“闭嘴/给我闭嘴”；
+      4. 【知情视界越界审查】：现实世界章节是否出现上帝视角前知（张掖/雷台/居延/老莫守玺宗族深水情报）？古墨残片“缓解头痛”等伏笔是否有感知依据而非凭空断言？
+      5. 【对白节奏与人物描写充实度】：严禁全篇碎嘴对白打乒乓球，全章对白占比控制在 25%~40%，留足 60%+ 篇幅给主要角色（顾君、张洋、白艺）的心理推演与动作神态白描；
+      6. 【主角团性格指纹】：顾君代码齿轮推演+生理应激真实感、张洋贫嘴直觉野史+创伤底色、白艺理性量化+克制温情、苏晚晴（仅提及）克制严谨。
+      在报告末尾严格单列一行输出格式：
+      SCORES: {"overall": 90, "persona": 92, "addressing": 95, "epistemic_boundary": 95, "dialogue_balance": 88}
+    skills:
+      - novel-lore-enforcer
+      - novel-consistency-auditor
+      - novel-character-guardian
+    inputs:
+      - 工作区/第{chapter_pad}章/03_去AI味润色稿.md
+      - 人物小传.md
+      - 间隙章大纲.md
+    outputs:
+      - 工作区/第{chapter_pad}章/03_5_人设审查报告.md
+    assert:
+      score_field: overall
+      min_score: 80
+      min_scores:
+        overall: 80
+        persona: 80
+        addressing: 80
+        epistemic_boundary: 80
+    subagent_type: novel_persona_auditor
+    model_tier: flash
+  review_qc:
+    kind: agent
+    after:
+      - audit_persona
+    model: gemini-3.8-flash-high
+    role: 历史考据主编与反吃书盲审员
+    prompt: |
+      对 工作区/第{chapter_pad}章/03_去AI味润色稿.md 进行逐段盲审对抗质检：
+      1. 【大纲对照审查】：是否严格遵循《间隙章大纲.md》第 51 章细纲？（窒息呛醒与古墨残片确认非梦、现实仅过七个半小时、论坛加密私信连秦华【关山难越】、探望PTSD张洋并确立其留守后方、傍晚白艺雪梨银耳汤收尾；伏笔：墨香缓解头痛、张洋转后方、邻里温情线）；
+      2. 【知情边界与称谓审查】：是否严守知情边界？张洋/秦华称谓是否得体？有无粗暴咆哮“闭嘴”？
+      3. 【规则杀审查】：是否出现“一死生/齐彭殇”等禁忌词？现实章节是否误用副本规则杀机制？
+      4. 【写作规范审查】：字数是否在 2000~2500 字之间？是否存在连续超过 400 字无对话引号的拖沓段落？
+      5. 【人物性格审查】：顾君带伤排障式的冷静清醒、张洋创伤真实感与真情大义、白艺理性外壳下的克制温情、秦华私信的沉稳靠谱（伪装面）。
+      定位到具体句段给出修改建议，并在报告末尾严格单列一行输出格式：
+      SCORES: {"overall": 88, "rules": 92, "ooc": 90, "addressing": 92, "dialogue_density": 88}
+    skills:
+      - novel-memory-ledger
+      - story-review
+      - novel-lore-enforcer
+      - novel-consistency-auditor
+      - novel-pacing-evaluator
+    inputs:
+      - 工作区/第{chapter_pad}章/03_去AI味润色稿.md
+      - 间隙章大纲.md
+      - 人物小传.md
+      - 工作区/第{chapter_pad}章/03_5_人设审查报告.md
+    outputs:
+      - 工作区/第{chapter_pad}章/04_盲审质检报告.md
+    assert:
+      score_field: overall
+      min_score: 80
+      min_scores:
+        overall: 80
+        rules: 80
+        addressing: 80
+    subagent_type: novel_qc_reviewer
+    model_tier: flash
+  author_accept:
+    kind: human
+    after:
+      - review_qc
+    ask: 请创作者审阅润色稿与审查打分，确认无误后点击放行入库为正式第{chapter_num}章（注意：入库将覆盖更新现有 正文/051-间隙章一-回响.md 正式稿，旧稿已备份于 工作区/第51章/00_旧稿底稿_间隙章一回响.md）。
+    inputs:
+      - 工作区/第{chapter_pad}章/03_去AI味润色稿.md
+      - 工作区/第{chapter_pad}章/03_3_朱雀检测报告.md
+      - 工作区/第{chapter_pad}章/03_4_朱雀API终审报告.md
+      - 工作区/第{chapter_pad}章/04_盲审质检报告.md
+      - 工作区/第{chapter_pad}章/03_5_人设审查报告.md
+    outputs:
+      - 正文/051-间隙章一-回响.md
+  novel_stats:
+    kind: command
+    after:
+      - author_accept
+    run:
+      - python
+      - d:/novelFlow/shared/novel_stats.py
+      - --project
+      - .
+      - --chapter
+      - 正文/051-间隙章一-回响.md
+      - --output
+      - 工作区/第{chapter_pad}章/05_章节统计.json
+    inputs:
+      - 正文/051-间隙章一-回响.md
+    outputs:
+      - 工作区/第{chapter_pad}章/05_章节统计.json

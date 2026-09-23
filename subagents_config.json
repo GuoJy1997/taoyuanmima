@@ -1,0 +1,58 @@
+{
+  "version": "1.0",
+  "preset": "all_flash",
+  "bindings": {
+    "explore_context": {
+      "tier": "flash",
+      "model": "gemini-3.8-flash-high"
+    },
+    "draft_chapter": {
+      "tier": "flash",
+      "model": "gemini-3.8-flash-high"
+    },
+    "deai_polish": {
+      "tier": "flash",
+      "model": "gemini-3.8-flash-high"
+    },
+    "review_qc": {
+      "tier": "flash",
+      "model": "gemini-3.8-flash-high"
+    },
+    "audit_persona": {
+      "tier": "flash",
+      "model": "gemini-3.8-flash-high"
+    }
+  },
+  "nodes": {
+    "explore_context": {
+      "subagent_type": "novel_context_scout",
+      "role": "前情探索与状态对齐总账员",
+      "tier": "flash",
+      "model": "gemini-3.8-flash-high"
+    },
+    "draft_chapter": {
+      "subagent_type": "novel_chapter_writer",
+      "role": "长篇小说主笔作家",
+      "tier": "flash",
+      "model": "gemini-3.8-flash-high"
+    },
+    "deai_polish": {
+      "subagent_type": "novel_deai_polisher",
+      "role": "去AI味与文风校准专家",
+      "tier": "flash",
+      "model": "gemini-3.8-flash-high"
+    },
+    "review_qc": {
+      "subagent_type": "novel_qc_reviewer",
+      "role": "历史考据主编与反吃书盲审员",
+      "tier": "flash",
+      "model": "gemini-3.8-flash-high"
+    },
+    "audit_persona": {
+      "subagent_type": "novel_persona_auditor",
+      "role": "角色人设与行为边界稽查官",
+      "tier": "flash",
+      "model": "gemini-3.8-flash-high"
+    }
+  }
+}

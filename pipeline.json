@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-23T07:39:26Z",
+  "params": {
+    "chapter_num": 51,
+    "chapter_pad": "51",
+    "chapter_pad3": "051",
+    "chapter_title": "回响",
+    "volume_name": "现实间隙卷_兰亭余波",
+    "genre": "历史悬疑 × 规则怪谈 × 魏晋智斗",
+    "tone": "考据冷硬、短句破进、高密度对白、现实余震",
+    "style_archetype": "十日终焉×诡舍 (现代通俗白话/生死博弈/深度心理悬疑)",
+    "classical_ratio": "纯现代通俗白话占比 90%~95%，半文半白仅占 5%~10%",
+    "psychological_depth": "高密度心理推演与生理应激白描（心率、冷汗、微表情、多步推演反制），严禁削弱情绪",
+    "target_words": 2300,
+    "chapter_prev_num": 50,
+    "chapter_prev_pad": "50",
+    "chapter_prev_pad3": "050",
+    "volume_num": 1,
+    "volume_pad": "01"
+  },
+  "running_node": null,
+  "running_since": null,
+  "nodes": {
+    "explore_context": {
+      "kind": "agent",
+      "role": "副本前情探索与状态对齐总账员",
+      "status": "stale",
+      "inputs": {
+        "间隙章大纲.md": "sha256:95642046640da1a22a80275a632e0c9661ada8879f987a22c0d176951aabffa5",
+        "handoff.md": "sha256:0bdde28fd5b61981cb48e7a7b9e40d99f99d279e8644cc9a1f117786ba5e6398",
+        "人物小传.md": "sha256:c221b6e9318109e00d2fcd38bf1867c6755c27cbf1642bb0580c7759f00f237c",
+        "设定/事实账本/snapshot.json": "sha256:b8be964a9e047effc198cb789783a9ac62f598ebe8abca71777aa07b63957886",
+        "正文/050-第50章-归朝堂.md": "sha256:c792ec03bf7655667e21d8fe2419c92fe016bf68978de641d2dec4b2d4dc9990"
+      },
+      "outputs": [
+        "工作区/第51章/01_前情与状态上下文.md"
+      ],
+      "staleBecause": "产物文件尚未生成: 工作区/第51章/01_前情与状态上下文.md",
+      "running": false,
+      "runningSince": null,
+      "model": "qfmodel",
+      "model_tier": "flash",
+      "model_origin": "role-mapped",
+      "model_note": "角色 novel_context_scout 在宿主 qoder 由 role_models 绑定为 qfmodel，已忽略图谱里遗留的模型名 gemini-3.8-flash-high",
+      "subagent_type": "novel_context_scout"
+    },
+    "scene_beats": {
+      "kind": "agent",
+      "role": "单章分场骨架与悬念架构师",
+      "status": "blocked",
+      "inputs": {
+        "工作区/第51章/01_前情与状态上下文.md": null,
+        "间隙章大纲.md": "sha256:95642046640da1a22a80275a632e0c9661ada8879f987a22c0d176951aabffa5"
+      },
+      "outputs": [
+        "工作区/第51章/01_5_分场节拍表.md"
+      ],
+      "staleBecause": "输入文件缺失: 工作区/第51章/01_前情与状态上下文.md",
+      "running": false,
+      "runningSince": null,
+      "model": "qfmodel",
+      "model_tier": "flash",
+      "model_origin": "tier-mapped"
+    },
+    "draft_chapter": {
+      "kind": "agent",
+      "role": "历史悬疑小说主笔作家 (对标鬼吹灯/世说新语/魏晋暗战)",
+      "status": "blocked",
+      "inputs": {
+        "工作区/第51章/01_5_分场节拍表.md": null,
+        "工作区/第51章/01_前情与状态上下文.md": null,
+        "人物小传.md": "sha256:c221b6e9318109e00d2fcd38bf1867c6755c27cbf1642bb0580c7759f00f237c",
+        "间隙章大纲.md": "sha256:95642046640da1a22a80275a632e0c9661ada8879f987a22c0d176951aabffa5",
+        "assets/voice_sample.md": "sha256:2df315d9cf60ee2249b75f25916df2d1e7ed31b74b37761e90232a0eeb11549f"
+      },
+      "outputs": [
+        "工作区/第51章/02_正文初稿.md"
+      ],
+      "staleBecause": "输入文件缺失: 工作区/第51章/01_5_分场节拍表.md, 工作区/第51章/01_前情与状态上下文.md",
+      "running": false,
+      "runningSince": null,
+      "model": "qfmodel",
+      "model_tier": "flash",
+      "model_origin": "role-mapped",
+      "model_note": "角色 novel_chapter_writer 在宿主 qoder 由 role_models 绑定为 qfmodel，已忽略图谱里遗留的模型名 gemini-3.8-flash-high",
+      "subagent_type": "novel_chapter_writer"
+    },
+    "deai_polish": {
+      "kind": "agent",
+      "role": "去 AI 味与魏晋民俗文风专家",
+      "status": "blocked",
+      "inputs": {
+        "工作区/第51章/02_正文初稿.md": null,
+        "assets/voice_sample.md": "sha256:2df315d9cf60ee2249b75f25916df2d1e7ed31b74b37761e90232a0eeb11549f"
+      },
+      "outputs": [
+        "工作区/第51章/03_去AI味润色稿.md"
+      ],
+      "staleBecause": "输入文件缺失: 工作区/第51章/02_正文初稿.md",
+      "running": false,
+      "runningSince": null,
+      "model": "qmodel_38max",
+      "model_tier": "flash",
+      "model_origin": "role-mapped",
+      "model_note": "角色 novel_deai_polisher 在宿主 qoder 由 role_models 绑定为 qmodel_38max，已忽略图谱里遗留的模型名 gemini-3.8-flash-high",
+      "subagent_type": "novel_deai_polisher"
+    },
+    "check_zhuque": {
+      "kind": "command",
+      "role": "朱雀 AI 检测与拟人化特征门禁",
+      "status": "blocked",
+      "inputs": {
+        "工作区/第51章/03_去AI味润色稿.md": null
+      },
+      "outputs": [
+        "工作区/第51章/03_3_朱雀检测报告.md"
+      ],
+      "staleBecause": "输入文件缺失: 工作区/第51章/03_去AI味润色稿.md",
+      "running": false,
+      "runningSince": null
+    },
+    "zhuque_api_final": {
+      "kind": "command",
+      "role": "朱雀官方 API 终审门禁 (腾讯云 EdgeOne zhuque-text)",
+      "status": "blocked",
+      "inputs": {
+        "工作区/第51章/03_去AI味润色稿.md": null
+      },
+      "outputs": [
+        "工作区/第51章/03_4_朱雀API终审报告.md"
+      ],
+      "staleBecause": "输入文件缺失: 工作区/第51章/03_去AI味润色稿.md",
+      "running": false,
+      "runningSince": null
+    },
+    "audit_persona": {
+      "kind": "agent",
+      "role": "角色人设与行为边界稽查官",
+      "status": "blocked",
+      "inputs": {
+        "工作区/第51章/03_去AI味润色稿.md": null,
+        "人物小传.md": "sha256:c221b6e9318109e00d2fcd38bf1867c6755c27cbf1642bb0580c7759f00f237c",
+        "间隙章大纲.md": "sha256:95642046640da1a22a80275a632e0c9661ada8879f987a22c0d176951aabffa5"
+      },
+      "outputs": [
+        "工作区/第51章/03_5_人设审查报告.md"
+      ],
+      "staleBecause": "输入文件缺失: 工作区/第51章/03_去AI味润色稿.md",
+      "running": false,
+      "runningSince": null,
+      "model": "qmodel_38max",
+      "model_tier": "flash",
+      "model_origin": "role-mapped",
+      "model_note": "角色 novel_persona_auditor 在宿主 qoder 由 role_models 绑定为 qmodel_38max，已忽略图谱里遗留的模型名 gemini-3.8-flash-high",
+      "subagent_type": "novel_persona_auditor"
+    },
+    "review_qc": {
+      "kind": "agent",
+      "role": "历史考据主编与反吃书盲审员",
+      "status": "blocked",
+      "inputs": {
+        "工作区/第51章/03_去AI味润色稿.md": null,
+        "间隙章大纲.md": "sha256:95642046640da1a22a80275a632e0c9661ada8879f987a22c0d176951aabffa5",
+        "人物小传.md": "sha256:c221b6e9318109e00d2fcd38bf1867c6755c27cbf1642bb0580c7759f00f237c",
+        "工作区/第51章/03_5_人设审查报告.md": null
+      },
+      "outputs": [
+        "工作区/第51章/04_盲审质检报告.md"
+      ],
+      "staleBecause": "输入文件缺失: 工作区/第51章/03_去AI味润色稿.md, 工作区/第51章/03_5_人设审查报告.md",
+      "running": false,
+      "runningSince": null,
+      "model": "qmodel_38max",
+      "model_tier": "flash",
+      "model_origin": "role-mapped",
+      "model_note": "角色 novel_qc_reviewer 在宿主 qoder 由 role_models 绑定为 qmodel_38max，已忽略图谱里遗留的模型名 gemini-3.8-flash-high",
+      "subagent_type": "novel_qc_reviewer"
+    },
+    "author_accept": {
+      "kind": "human",
+      "role": null,
+      "status": "blocked",
+      "inputs": {
+        "工作区/第51章/03_去AI味润色稿.md": null,
+        "工作区/第51章/03_3_朱雀检测报告.md": null,
+        "工作区/第51章/03_4_朱雀API终审报告.md": null,
+        "工作区/第51章/04_盲审质检报告.md": null,
+        "工作区/第51章/03_5_人设审查报告.md": null
+      },
+      "outputs": [
+        "正文/051-间隙章一-回响.md"
+      ],
+      "staleBecause": "输入文件缺失: 工作区/第51章/03_去AI味润色稿.md, 工作区/第51章/03_3_朱雀检测报告.md, 工作区/第51章/03_4_朱雀API终审报告.md, 工作区/第51章/04_盲审质检报告.md, 工作区/第51章/03_5_人设审查报告.md",
+      "running": false,
+      "runningSince": null,
+      "ask": "请创作者审阅润色稿与审查打分，确认无误后点击放行入库为正式第{chapter_num}章（注意：入库将覆盖更新现有 正文/051-间隙章一-回响.md 正式稿，旧稿已备份于 工作区/第51章/00_旧稿底稿_间隙章一回响.md）。",
+      "ackAt": null
+    },
+    "novel_stats": {
+      "kind": "command",
+      "role": null,
+      "status": "blocked",
+      "inputs": {
+        "正文/051-间隙章一-回响.md": "sha256:cbeb7bd2cc5e2172555662865dd844e244cec0590f830872e41716dd476a98e1"
+      },
+      "outputs": [
+        "工作区/第51章/05_章节统计.json"
+      ],
+      "staleBecause": "产物文件尚未生成: 工作区/第51章/05_章节统计.json；上游节点 [author_accept] 处于 blocked 状态",
+      "running": false,
+      "runningSince": null
+    }
+  }
+}

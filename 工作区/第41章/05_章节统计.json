@@ -1,0 +1,16 @@
+{
+  "project": "桃园密码",
+  "chapters_analyzed": 1,
+  "total_book_words": 2530,
+  "chapters": [
+    {
+      "file": "041-第41章-密会目击.md",
+      "total_words": 2530,
+      "paragraphs": 136,
+      "dialogue_words": 760,
+      "dialogue_ratio_percent": 30.0,
+      "character_mentions": {},
+      "clues_detected": []
+    }
+  ]
+}

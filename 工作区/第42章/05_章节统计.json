@@ -1,0 +1,18 @@
+{
+  "project": "桃园密码",
+  "chapters_analyzed": 1,
+  "total_book_words": 2435,
+  "chapters": [
+    {
+      "file": "042-第42章-撕符.md",
+      "total_words": 2435,
+      "paragraphs": 106,
+      "dialogue_words": 832,
+      "dialogue_ratio_percent": 34.2,
+      "character_mentions": {
+        "语言指纹": 1
+      },
+      "clues_detected": []
+    }
+  ]
+}

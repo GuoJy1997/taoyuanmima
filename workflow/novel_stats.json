@@ -1,0 +1,472 @@
+{
+  "project": "桃园密码",
+  "chapters_analyzed": 50,
+  "total_book_words": 107905,
+  "chapters": [
+    {
+      "file": "001-第1章-忘路之远近.md",
+      "total_words": 2348,
+      "paragraphs": 91,
+      "dialogue_words": 510,
+      "dialogue_ratio_percent": 21.7,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "002-第2章-豁然开朗.md",
+      "total_words": 2117,
+      "paragraphs": 68,
+      "dialogue_words": 296,
+      "dialogue_ratio_percent": 14.0,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "003-第3章-怡然自乐.md",
+      "total_words": 1715,
+      "paragraphs": 48,
+      "dialogue_words": 246,
+      "dialogue_ratio_percent": 14.3,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "004-第4章-仿佛若有光.md",
+      "total_words": 1691,
+      "paragraphs": 43,
+      "dialogue_words": 109,
+      "dialogue_ratio_percent": 6.4,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "005-第5章-出口.md",
+      "total_words": 2344,
+      "paragraphs": 59,
+      "dialogue_words": 334,
+      "dialogue_ratio_percent": 14.2,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "006-第6章-铁锈味.md",
+      "total_words": 3069,
+      "paragraphs": 93,
+      "dialogue_words": 609,
+      "dialogue_ratio_percent": 19.8,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "007-第7章-幻觉？.md",
+      "total_words": 2566,
+      "paragraphs": 75,
+      "dialogue_words": 355,
+      "dialogue_ratio_percent": 13.8,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "008-第8章-自告奋勇.md",
+      "total_words": 2083,
+      "paragraphs": 79,
+      "dialogue_words": 691,
+      "dialogue_ratio_percent": 33.2,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "009-第9章-逃亡.md",
+      "total_words": 2572,
+      "paragraphs": 75,
+      "dialogue_words": 367,
+      "dialogue_ratio_percent": 14.3,
+      "character_mentions": {
+        "身份": 1
+      },
+      "clues_detected": []
+    },
+    {
+      "file": "010-第10章-最后一天.md",
+      "total_words": 4136,
+      "paragraphs": 108,
+      "dialogue_words": 1522,
+      "dialogue_ratio_percent": 36.8,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "011-第11章-逃之夭夭.md",
+      "total_words": 3185,
+      "paragraphs": 78,
+      "dialogue_words": 1597,
+      "dialogue_ratio_percent": 50.1,
+      "character_mentions": {
+        "身份": 1
+      },
+      "clues_detected": []
+    },
+    {
+      "file": "012-第12章-已经够了.md",
+      "total_words": 2846,
+      "paragraphs": 79,
+      "dialogue_words": 490,
+      "dialogue_ratio_percent": 17.2,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "013-第13章-后遂无问津者.md",
+      "total_words": 3491,
+      "paragraphs": 73,
+      "dialogue_words": 683,
+      "dialogue_ratio_percent": 19.6,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "014-间隙章上-同梦.md",
+      "total_words": 991,
+      "paragraphs": 47,
+      "dialogue_words": 168,
+      "dialogue_ratio_percent": 17.0,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "015-间隙章中-观测.md",
+      "total_words": 2122,
+      "paragraphs": 67,
+      "dialogue_words": 820,
+      "dialogue_ratio_percent": 38.6,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "016-间隙章下-武陵.md",
+      "total_words": 1718,
+      "paragraphs": 60,
+      "dialogue_words": 470,
+      "dialogue_ratio_percent": 27.4,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "017-第17章-梦醒时分.md",
+      "total_words": 1802,
+      "paragraphs": 50,
+      "dialogue_words": 82,
+      "dialogue_ratio_percent": 4.6,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "018-第18章-伙伴？.md",
+      "total_words": 1648,
+      "paragraphs": 42,
+      "dialogue_words": 646,
+      "dialogue_ratio_percent": 39.2,
+      "character_mentions": {
+        "身份": 1
+      },
+      "clues_detected": []
+    },
+    {
+      "file": "019-第19章-又来？.md",
+      "total_words": 2375,
+      "paragraphs": 58,
+      "dialogue_words": 740,
+      "dialogue_ratio_percent": 31.2,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "020-第20章-惨死.md",
+      "total_words": 1676,
+      "paragraphs": 39,
+      "dialogue_words": 304,
+      "dialogue_ratio_percent": 18.1,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "021-第21章-大会.md",
+      "total_words": 1681,
+      "paragraphs": 48,
+      "dialogue_words": 357,
+      "dialogue_ratio_percent": 21.2,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "022-第22章-陆续入场.md",
+      "total_words": 1393,
+      "paragraphs": 38,
+      "dialogue_words": 384,
+      "dialogue_ratio_percent": 27.6,
+      "character_mentions": {
+        "身份": 1
+      },
+      "clues_detected": []
+    },
+    {
+      "file": "023-第23章-重逢.md",
+      "total_words": 1085,
+      "paragraphs": 35,
+      "dialogue_words": 94,
+      "dialogue_ratio_percent": 8.7,
+      "character_mentions": {
+        "身份": 1
+      },
+      "clues_detected": []
+    },
+    {
+      "file": "024-第24章-修禊事也.md",
+      "total_words": 1888,
+      "paragraphs": 59,
+      "dialogue_words": 828,
+      "dialogue_ratio_percent": 43.9,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "025-第25章-禊饮.md",
+      "total_words": 1979,
+      "paragraphs": 66,
+      "dialogue_words": 676,
+      "dialogue_ratio_percent": 34.2,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "026-第26章-失踪.md",
+      "total_words": 1623,
+      "paragraphs": 73,
+      "dialogue_words": 579,
+      "dialogue_ratio_percent": 35.7,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "027-第27章-魏晋风度.md",
+      "total_words": 1995,
+      "paragraphs": 69,
+      "dialogue_words": 857,
+      "dialogue_ratio_percent": 43.0,
+      "character_mentions": {
+        "身份": 1
+      },
+      "clues_detected": []
+    },
+    {
+      "file": "028-第28章-荆州客.md",
+      "total_words": 1601,
+      "paragraphs": 69,
+      "dialogue_words": 372,
+      "dialogue_ratio_percent": 23.2,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "029-第29章-午前.md",
+      "total_words": 1664,
+      "paragraphs": 59,
+      "dialogue_words": 342,
+      "dialogue_ratio_percent": 20.6,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "030-第30章-风暴眼.md",
+      "total_words": 1713,
+      "paragraphs": 78,
+      "dialogue_words": 198,
+      "dialogue_ratio_percent": 11.6,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "031-第31章-流觞曲水.md",
+      "total_words": 1844,
+      "paragraphs": 87,
+      "dialogue_words": 501,
+      "dialogue_ratio_percent": 27.2,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "032-第32章-群贤毕至.md",
+      "total_words": 1585,
+      "paragraphs": 77,
+      "dialogue_words": 449,
+      "dialogue_ratio_percent": 28.3,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "033-第33章-新客.md",
+      "total_words": 1790,
+      "paragraphs": 88,
+      "dialogue_words": 337,
+      "dialogue_ratio_percent": 18.8,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "034-第34章-大灾变.md",
+      "total_words": 1602,
+      "paragraphs": 71,
+      "dialogue_words": 222,
+      "dialogue_ratio_percent": 13.9,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "035-第35章-假的.md",
+      "total_words": 1611,
+      "paragraphs": 78,
+      "dialogue_words": 493,
+      "dialogue_ratio_percent": 30.6,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "036-第36章-血流成河.md",
+      "total_words": 1540,
+      "paragraphs": 69,
+      "dialogue_words": 141,
+      "dialogue_ratio_percent": 9.2,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "037-第37章-镇灵符与名单.md",
+      "total_words": 2489,
+      "paragraphs": 109,
+      "dialogue_words": 1261,
+      "dialogue_ratio_percent": 50.7,
+      "character_mentions": {
+        "身份": 2,
+        "姓名": 1
+      },
+      "clues_detected": []
+    },
+    {
+      "file": "038-第38章-真够能干.md",
+      "total_words": 2473,
+      "paragraphs": 118,
+      "dialogue_words": 775,
+      "dialogue_ratio_percent": 31.3,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "039-第39章-桃花源的画.md",
+      "total_words": 2382,
+      "paragraphs": 143,
+      "dialogue_words": 786,
+      "dialogue_ratio_percent": 33.0,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "040-第40章-太顺了.md",
+      "total_words": 2595,
+      "paragraphs": 143,
+      "dialogue_words": 1232,
+      "dialogue_ratio_percent": 47.5,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "041-第41章-密会目击.md",
+      "total_words": 2530,
+      "paragraphs": 136,
+      "dialogue_words": 760,
+      "dialogue_ratio_percent": 30.0,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "042-第42章-撕符.md",
+      "total_words": 2480,
+      "paragraphs": 106,
+      "dialogue_words": 628,
+      "dialogue_ratio_percent": 25.3,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "043-第43章-显形.md",
+      "total_words": 2479,
+      "paragraphs": 132,
+      "dialogue_words": 590,
+      "dialogue_ratio_percent": 23.8,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "044-第44章-解药.md",
+      "total_words": 2402,
+      "paragraphs": 134,
+      "dialogue_words": 840,
+      "dialogue_ratio_percent": 35.0,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "045-第45章-顾君揭韩卓.md",
+      "total_words": 2825,
+      "paragraphs": 128,
+      "dialogue_words": 931,
+      "dialogue_ratio_percent": 33.0,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "046-第46章-绞杀·孙绣.md",
+      "total_words": 2399,
+      "paragraphs": 125,
+      "dialogue_words": 1113,
+      "dialogue_ratio_percent": 46.4,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "047-第47章-郗超揭刘弼·收尾.md",
+      "total_words": 2505,
+      "paragraphs": 159,
+      "dialogue_words": 901,
+      "dialogue_ratio_percent": 36.0,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "048-第48章-生门不开.md",
+      "total_words": 2393,
+      "paragraphs": 108,
+      "dialogue_words": 1121,
+      "dialogue_ratio_percent": 46.8,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "049-第49章-真相·召令.md",
+      "total_words": 2546,
+      "paragraphs": 126,
+      "dialogue_words": 868,
+      "dialogue_ratio_percent": 34.1,
+      "character_mentions": {},
+      "clues_detected": []
+    },
+    {
+      "file": "050-第50章-归朝堂.md",
+      "total_words": 2318,
+      "paragraphs": 139,
+      "dialogue_words": 521,
+      "dialogue_ratio_percent": 22.5,
+      "character_mentions": {},
+      "clues_detected": []
+    }
+  ]
+}

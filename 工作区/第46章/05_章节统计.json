@@ -1,0 +1,16 @@
+{
+  "project": "桃园密码",
+  "chapters_analyzed": 1,
+  "total_book_words": 2539,
+  "chapters": [
+    {
+      "file": "046-第46章-绞杀·孙绣.md",
+      "total_words": 2539,
+      "paragraphs": 115,
+      "dialogue_words": 1098,
+      "dialogue_ratio_percent": 43.2,
+      "character_mentions": {},
+      "clues_detected": []
+    }
+  ]
+}

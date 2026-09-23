@@ -1,0 +1,19 @@
+{
+  "project": "桃园密码",
+  "chapters_analyzed": 1,
+  "total_book_words": 2489,
+  "chapters": [
+    {
+      "file": "037-第37章-镇灵符与名单.md",
+      "total_words": 2489,
+      "paragraphs": 109,
+      "dialogue_words": 1261,
+      "dialogue_ratio_percent": 50.7,
+      "character_mentions": {
+        "身份": 2,
+        "姓名": 1
+      },
+      "clues_detected": []
+    }
+  ]
+}

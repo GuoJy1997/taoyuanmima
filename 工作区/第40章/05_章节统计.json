@@ -1,0 +1,16 @@
+{
+  "project": "桃园密码",
+  "chapters_analyzed": 1,
+  "total_book_words": 2595,
+  "chapters": [
+    {
+      "file": "040-第40章-太顺了.md",
+      "total_words": 2595,
+      "paragraphs": 143,
+      "dialogue_words": 1232,
+      "dialogue_ratio_percent": 47.5,
+      "character_mentions": {},
+      "clues_detected": []
+    }
+  ]
+}

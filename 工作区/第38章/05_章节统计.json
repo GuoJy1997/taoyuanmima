@@ -1,0 +1,16 @@
+{
+  "project": "桃园密码",
+  "chapters_analyzed": 1,
+  "total_book_words": 2473,
+  "chapters": [
+    {
+      "file": "038-第38章-真够能干.md",
+      "total_words": 2473,
+      "paragraphs": 118,
+      "dialogue_words": 775,
+      "dialogue_ratio_percent": 31.3,
+      "character_mentions": {},
+      "clues_detected": []
+    }
+  ]
+}

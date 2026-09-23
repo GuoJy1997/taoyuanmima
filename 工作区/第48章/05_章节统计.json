@@ -1,0 +1,16 @@
+{
+  "project": "桃园密码",
+  "chapters_analyzed": 1,
+  "total_book_words": 2538,
+  "chapters": [
+    {
+      "file": "048-第48章-生门不开.md",
+      "total_words": 2538,
+      "paragraphs": 151,
+      "dialogue_words": 1148,
+      "dialogue_ratio_percent": 45.2,
+      "character_mentions": {},
+      "clues_detected": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "project": "桃园密码",
+  "chapters_analyzed": 1,
+  "total_book_words": 2676,
+  "chapters": [
+    {
+      "file": "044-第44章-解药.md",
+      "total_words": 2676,
+      "paragraphs": 149,
+      "dialogue_words": 882,
+      "dialogue_ratio_percent": 33.0,
+      "character_mentions": {},
+      "clues_detected": []
+    }
+  ]
+}
