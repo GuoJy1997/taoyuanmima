@@ -1,0 +1,16 @@
+{
+  "project": "桃园密码",
+  "chapters_analyzed": 1,
+  "total_book_words": 2640,
+  "chapters": [
+    {
+      "file": "049-第49章-竹林·召令.md",
+      "total_words": 2640,
+      "paragraphs": 147,
+      "dialogue_words": 793,
+      "dialogue_ratio_percent": 30.0,
+      "character_mentions": {},
+      "clues_detected": []
+    }
+  ]
+}

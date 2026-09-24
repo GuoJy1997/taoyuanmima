@@ -1,0 +1,16 @@
+{
+  "project": "桃园密码",
+  "chapters_analyzed": 1,
+  "total_book_words": 2753,
+  "chapters": [
+    {
+      "file": "045-第45章-顾君揭韩卓.md",
+      "total_words": 2753,
+      "paragraphs": 127,
+      "dialogue_words": 936,
+      "dialogue_ratio_percent": 34.0,
+      "character_mentions": {},
+      "clues_detected": []
+    }
+  ]
+}

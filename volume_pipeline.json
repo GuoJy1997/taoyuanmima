@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "updatedAt": "2026-09-23T07:39:26Z",
+  "params": {
+    "volume_num": 3,
+    "volume_pad": "03",
+    "volume_name": "副本三_张掖将军·马踏飞燕",
+    "genre": "历史悬疑 × 规则怪谈 × 魏晋智斗",
+    "target_chapters": 36
+  },
+  "running_node": null,
+  "running_since": null,
+  "nodes": {
+    "pre_story_recap": {
+      "kind": "agent",
+      "role": "前置剧情总结与连贯性红线官",
+      "status": "stale",
+      "inputs": {
+        "handoff.md": "sha256:0bdde28fd5b61981cb48e7a7b9e40d99f99d279e8644cc9a1f117786ba5e6398",
+        "world.md": "sha256:7dc1ae9b5db0bf5e5b86ee3dc327e9f6b583c0084a18ba8bc1c8c63c8a3343a9",
+        "世界观设定.md": "sha256:7dc1ae9b5db0bf5e5b86ee3dc327e9f6b583c0084a18ba8bc1c8c63c8a3343a9",
+        "人物小传.md": "sha256:c221b6e9318109e00d2fcd38bf1867c6755c27cbf1642bb0580c7759f00f237c",
+        "relations.md": "sha256:bfebcdbb773acce2014e10a91a5830686ca2a1fdcc51e3c002cb4469d7bb3759",
+        "间隙章大纲.md": "sha256:95642046640da1a22a80275a632e0c9661ada8879f987a22c0d176951aabffa5",
+        "伏笔总表.md": "sha256:164b4d2b75ff3737c9e15c0d0a4fec32875ffccb9d5001221454dc37d19c5fab",
+        "伏笔总表2.md": "sha256:353cd0d92dc634b3a2046dfeaf05121c9f19a738cdd20d9dfd49cf8a1232ca21",
+        "副本2设定.md": "sha256:711a6312951de3c48851b9c51b8cc2acaf9f5175e0f0a3ee82b8259bb2b28db7",
+        "副本3设定.md": "sha256:f2d56fde7381cfd79373032a26e697ea783a03ea19843cc2bf626d5b585b5985",
+        "副本3故事.md": "sha256:b794e712cf4fc0389607b8fe7beea6137eadd3e8134238e370ee77bc4770a0f4"
+      },
+      "outputs": [
+        "工作区/分卷策划/第03卷_00A_前情总结与连贯性红线.md"
+      ],
+      "staleBecause": "产物文件尚未生成: 工作区/分卷策划/第03卷_00A_前情总结与连贯性红线.md",
+      "running": false,
+      "runningSince": null,
+      "model": "qmodel_38max",
+      "model_tier": "pro",
+      "model_origin": "tier-mapped"
+    },
+    "fact_explorer": {
+      "kind": "agent",
+      "role": "事实探索与学术底座官",
+      "status": "stale",
+      "inputs": {
+        "world.md": "sha256:7dc1ae9b5db0bf5e5b86ee3dc327e9f6b583c0084a18ba8bc1c8c63c8a3343a9",
+        "世界观设定.md": "sha256:7dc1ae9b5db0bf5e5b86ee3dc327e9f6b583c0084a18ba8bc1c8c63c8a3343a9",
+        "副本3设定.md": "sha256:f2d56fde7381cfd79373032a26e697ea783a03ea19843cc2bf626d5b585b5985",
+        "副本3故事.md": "sha256:b794e712cf4fc0389607b8fe7beea6137eadd3e8134238e370ee77bc4770a0f4"
+      },
+      "outputs": [
+        "工作区/分卷策划/第03卷_00B_事实与学术底座.md"
+      ],
+      "staleBecause": "产物文件尚未生成: 工作区/分卷策划/第03卷_00B_事实与学术底座.md",
+      "running": false,
+      "runningSince": null,
+      "model": "qmodel_38max",
+      "model_tier": "pro",
+      "model_origin": "tier-mapped"
+    },
+    "volume_premise": {
+      "kind": "agent",
+      "role": "副本立意与终局定位官",
+      "status": "blocked",
+      "inputs": {
+        "工作区/分卷策划/第03卷_00A_前情总结与连贯性红线.md": null,
+        "工作区/分卷策划/第03卷_00B_事实与学术底座.md": null,
+        "outline.md": "sha256:27bcbd21b7374b8836d992b0ada9340b0c0d4e109b5c8c1783e2fff520cd312c",
+        "world.md": "sha256:7dc1ae9b5db0bf5e5b86ee3dc327e9f6b583c0084a18ba8bc1c8c63c8a3343a9",
+        "人物小传.md": "sha256:c221b6e9318109e00d2fcd38bf1867c6755c27cbf1642bb0580c7759f00f237c",
+        "handoff.md": "sha256:0bdde28fd5b61981cb48e7a7b9e40d99f99d279e8644cc9a1f117786ba5e6398",
+        "间隙章大纲.md": "sha256:95642046640da1a22a80275a632e0c9661ada8879f987a22c0d176951aabffa5",
+        "副本3设定.md": "sha256:f2d56fde7381cfd79373032a26e697ea783a03ea19843cc2bf626d5b585b5985",
+        "副本3故事.md": "sha256:b794e712cf4fc0389607b8fe7beea6137eadd3e8134238e370ee77bc4770a0f4"
+      },
+      "outputs": [
+        "工作区/分卷策划/第03卷_01_立意与核心命题.md"
+      ],
+      "staleBecause": "输入文件缺失: 工作区/分卷策划/第03卷_00A_前情总结与连贯性红线.md, 工作区/分卷策划/第03卷_00B_事实与学术底座.md",
+      "running": false,
+      "runningSince": null,
+      "model": "qmodel_38max",
+      "model_tier": "pro",
+      "model_origin": "role-mapped",
+      "subagent_type": "novel_dungeon_architect"
+    },
+    "dungeon_physics": {
+      "kind": "agent",
+      "role": "副本物理法则与生存机制架构师",
+      "status": "blocked",
+      "inputs": {
+        "工作区/分卷策划/第03卷_01_立意与核心命题.md": null,
+        "工作区/分卷策划/第03卷_00B_事实与学术底座.md": null,
+        "world.md": "sha256:7dc1ae9b5db0bf5e5b86ee3dc327e9f6b583c0084a18ba8bc1c8c63c8a3343a9",
+        "副本3设定.md": "sha256:f2d56fde7381cfd79373032a26e697ea783a03ea19843cc2bf626d5b585b5985"
+      },
+      "outputs": [
+        "工作区/分卷策划/第03卷_02_副本物理与生存法则.md"
+      ],
+      "staleBecause": "输入文件缺失: 工作区/分卷策划/第03卷_01_立意与核心命题.md, 工作区/分卷策划/第03卷_00B_事实与学术底座.md",
+      "running": false,
+      "runningSince": null,
+      "model": "qmodel_38max",
+      "model_tier": "pro",
+      "model_origin": "role-mapped",
+      "subagent_type": "novel_dungeon_architect"
+    },
+    "faction_agenda_matrix": {
+      "kind": "agent",
+      "role": "多方势力博弈与阴谋精算师",
+      "status": "blocked",
+      "inputs": {
+        "工作区/分卷策划/第03卷_02_副本物理与生存法则.md": null,
+        "工作区/分卷策划/第03卷_00B_事实与学术底座.md": null,
+        "人物小传.md": "sha256:c221b6e9318109e00d2fcd38bf1867c6755c27cbf1642bb0580c7759f00f237c",
+        "relations.md": "sha256:bfebcdbb773acce2014e10a91a5830686ca2a1fdcc51e3c002cb4469d7bb3759",
+        "副本3设定.md": "sha256:f2d56fde7381cfd79373032a26e697ea783a03ea19843cc2bf626d5b585b5985"
+      },
+      "outputs": [
+        "工作区/分卷策划/第03卷_03_势力暗算盘与博弈矩阵.md"
+      ],
+      "staleBecause": "输入文件缺失: 工作区/分卷策划/第03卷_02_副本物理与生存法则.md, 工作区/分卷策划/第03卷_00B_事实与学术底座.md",
+      "running": false,
+      "runningSince": null,
+      "model": "qmodel_38max",
+      "model_tier": "pro",
+      "model_origin": "role-mapped",
+      "subagent_type": "novel_faction_schemer"
+    },
+    "revelation_ladder": {
+      "kind": "agent",
+      "role": "反转链与认知阶梯设计官",
+      "status": "blocked",
+      "inputs": {
+        "工作区/分卷策划/第03卷_02_副本物理与生存法则.md": null,
+        "工作区/分卷策划/第03卷_03_势力暗算盘与博弈矩阵.md": null,
+        "工作区/分卷策划/第03卷_00A_前情总结与连贯性红线.md": null,
+        "副本3故事.md": "sha256:b794e712cf4fc0389607b8fe7beea6137eadd3e8134238e370ee77bc4770a0f4"
+      },
+      "outputs": [
+        "工作区/分卷策划/第03卷_04_四阶认知反转链.md"
+      ],
+      "staleBecause": "输入文件缺失: 工作区/分卷策划/第03卷_02_副本物理与生存法则.md, 工作区/分卷策划/第03卷_03_势力暗算盘与博弈矩阵.md, 工作区/分卷策划/第03卷_00A_前情总结与连贯性红线.md",
+      "running": false,
+      "runningSince": null,
+      "model": "qmodel_38max",
+      "model_tier": "pro",
+      "model_origin": "role-mapped",
+      "subagent_type": "novel_faction_schemer"
+    },
+    "pacing_beats": {
+      "kind": "agent",
+      "role": "三幕节拍器与逐章细纲架构师",
+      "status": "blocked",
+      "inputs": {
+        "工作区/分卷策划/第03卷_04_四阶认知反转链.md": null,
+        "工作区/分卷策划/第03卷_03_势力暗算盘与博弈矩阵.md": null,
+        "工作区/分卷策划/第03卷_02_副本物理与生存法则.md": null,
+        "工作区/分卷策划/第03卷_00A_前情总结与连贯性红线.md": null,
+        "副本3故事.md": "sha256:b794e712cf4fc0389607b8fe7beea6137eadd3e8134238e370ee77bc4770a0f4",
+        "间隙章大纲.md": "sha256:95642046640da1a22a80275a632e0c9661ada8879f987a22c0d176951aabffa5"
+      },
+      "outputs": [
+        "工作区/分卷策划/第03卷_05_逐章细纲矩阵.md"
+      ],
+      "staleBecause": "输入文件缺失: 工作区/分卷策划/第03卷_04_四阶认知反转链.md, 工作区/分卷策划/第03卷_03_势力暗算盘与博弈矩阵.md, 工作区/分卷策划/第03卷_02_副本物理与生存法则.md, 工作区/分卷策划/第03卷_00A_前情总结与连贯性红线.md",
+      "running": false,
+      "runningSince": null,
+      "model": "qfmodel",
+      "model_tier": "flash",
+      "model_origin": "role-mapped",
+      "subagent_type": "novel_chapter_writer"
+    },
+    "clue_ledger_sync": {
+      "kind": "agent",
+      "role": "伏笔总账同步与审查员",
+      "status": "blocked",
+      "inputs": {
+        "工作区/分卷策划/第03卷_05_逐章细纲矩阵.md": null,
+        "伏笔总表3.md": "sha256:ea16b2df4fecb7b00c5a14f7f5cee35b682898b8fa4bf054b3164adeea1ae52e"
+      },
+      "outputs": [
+        "工作区/分卷策划/第03卷_06_伏笔生命周期总账.md"
+      ],
+      "staleBecause": "输入文件缺失: 工作区/分卷策划/第03卷_05_逐章细纲矩阵.md",
+      "running": false,
+      "runningSince": null,
+      "model": "qmodel_38max",
+      "model_tier": "pro",
+      "model_origin": "role-mapped",
+      "subagent_type": "novel_qc_reviewer"
+    },
+    "author_accept": {
+      "kind": "human",
+      "role": null,
+      "status": "blocked",
+      "inputs": {
+        "工作区/分卷策划/第03卷_02_副本物理与生存法则.md": null,
+        "工作区/分卷策划/第03卷_03_势力暗算盘与博弈矩阵.md": null,
+        "工作区/分卷策划/第03卷_05_逐章细纲矩阵.md": null,
+        "工作区/分卷策划/第03卷_06_伏笔生命周期总账.md": null
+      },
+      "outputs": [
+        "副本3故事.md",
+        "副本3设定.md",
+        "伏笔总表3.md"
+      ],
+      "staleBecause": "输入文件缺失: 工作区/分卷策划/第03卷_02_副本物理与生存法则.md, 工作区/分卷策划/第03卷_03_势力暗算盘与博弈矩阵.md, 工作区/分卷策划/第03卷_05_逐章细纲矩阵.md, 工作区/分卷策划/第03卷_06_伏笔生命周期总账.md",
+      "running": false,
+      "runningSince": null,
+      "ask": "请创作者审阅本卷的副本物理机制、四方暗算盘、四阶认知反转链、逐章细纲矩阵及伏笔总账，确认无误后点击放行归档为正式分卷资产（注意：归档将覆盖更新现有 副本3故事.md / 副本3设定.md / 伏笔总表3.md，旧稿已备份于 工作区/分卷策划/00_旧稿备份_副本三/）。",
+      "ackAt": null
+    }
+  }
+}

@@ -1,3 +1,6 @@
 # 编辑器/工具生成目录
 .qoder/
 .trae-skills/
+
+# Python 缓存
+__pycache__/

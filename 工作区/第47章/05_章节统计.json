@@ -1,0 +1,16 @@
+{
+  "project": "桃园密码",
+  "chapters_analyzed": 1,
+  "total_book_words": 2552,
+  "chapters": [
+    {
+      "file": "047-第47章-郗超揭刘弼·收尾.md",
+      "total_words": 2552,
+      "paragraphs": 144,
+      "dialogue_words": 966,
+      "dialogue_ratio_percent": 37.9,
+      "character_mentions": {},
+      "clues_detected": []
+    }
+  ]
+}

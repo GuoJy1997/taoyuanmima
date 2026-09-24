@@ -1,0 +1,16 @@
+{
+  "project": "桃园密码",
+  "chapters_analyzed": 1,
+  "total_book_words": 2527,
+  "chapters": [
+    {
+      "file": "050-第50章-归朝堂.md",
+      "total_words": 2527,
+      "paragraphs": 132,
+      "dialogue_words": 627,
+      "dialogue_ratio_percent": 24.8,
+      "character_mentions": {},
+      "clues_detected": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "project": "桃园密码",
+  "chapters_analyzed": 1,
+  "total_book_words": 2382,
+  "chapters": [
+    {
+      "file": "039-第39章-桃花源的画.md",
+      "total_words": 2382,
+      "paragraphs": 143,
+      "dialogue_words": 786,
+      "dialogue_ratio_percent": 33.0,
+      "character_mentions": {},
+      "clues_detected": []
+    }
+  ]
+}
